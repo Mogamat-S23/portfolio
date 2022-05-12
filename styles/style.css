@@ -1,0 +1,268 @@
+/* .projects-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+} */
+
+
+
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* landing */
+
+
+/* navbar */
+
+ #about{
+    scroll-margin: 0.5px;
+}
+
+
+#services{
+    scroll-margin: 62px;
+}
+#testimonials{
+    scroll-margin: 62px;
+}
+#contact{
+    scroll-margin: 1px;
+    /* height: 700px; */
+} 
+#resume{
+    scroll-margin: 47px;
+    /* height: 800px; */
+}
+
+
+/* projects */
+.projects-container{ 
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: space-between;
+
+    
+}
+ /* image sizing */
+.projects-container img{
+    max-height: 400px;
+    max-width: 100%;
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: 10%;
+    transition: .8s;
+    /* opacity: .5; */
+    
+}
+.img-container {
+    position: relative;
+}
+/* BECOMES OPAQUE WHEN HOVER */
+.img-container:hover > img{
+    opacity: .75;
+}
+/* CENTERS BUTTONS IN IMG */
+.btn-center {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* SETS BTN TO INVISIBLE */
+.img-container .btn-center .btn {
+    visibility: hidden;
+    opacity: 0;
+    transition: .8s;
+}
+/* SHOWS BUTTONS WHEN HOVER */
+.img-container:hover>.btn-center .btn {
+    visibility: visible;
+    opacity: 1;
+}
+.btn-center  a:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* contact form */
+
+.form-wrapper{
+    width: 60%;
+    margin: auto;
+    padding-bottom: 2em;
+}
+
+
+/* skills */
+
+.card{
+    padding:5px;
+}
+
+
+
+
+
+
+.experience-container {
+    border-left: 3px solid  rgba(128, 14, 14, 0.8);
+    padding-left: 20px;
+    position: relative;
+  }
+  .experience-container::before {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    display: block;
+    content: "";
+    width: 20px;
+    height: 20px;
+    border: 3px solid black;
+    border-radius: 50%;
+    background :rgba(52, 10, 107, 0.8)
+    /* background-color: rgb(248, 249, 250); */
+  }
+
+/* .img-pro{
+    width: 100px !important;
+    height: 100px !important;
+} */
+
+/* skills */
+#services{
+    background-image: url(../Images/retrowave-synthwave.gif);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bgColor{
+    transition: 10s;
+   background: linear-gradient(
+       rgba(128, 14, 14, 0.8),
+       rgba(52, 10, 107, 0.8)
+   );
+   border-bottom: 1px solid white;
+}
+
+/* testimonials */
+#testimonials{
+    background:
+    /* top, transparent red, faked with gradient */
+    linear-gradient(
+      rgba(255, 0, 0, 0.45),
+      rgba(255, 0, 0, 0.45)
+    ),
+    /* bottom, image */
+    url(https://picsum.photos/1920/1200);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.rounded-image{
+    height: 20em;
+    width: 20em;
+    /* aspect-ratio: 1;
+    object-fit: cover;
+    object-position: 10px 10px; */
+    border-radius: 50%;
+}
+.circle{
+    width: 10px !important;
+    height: 10px !important;
+    aspect-ratio: 1 !important;
+    border-radius: 50% !important;
+}
+
+#rash{
+    object-position: 0px -4px !important; 
+}
+#car{ height: 610px;
+
+}
+#car-inner{ padding-top: 80px;
+    
+}
+
+/* cards-skills */
+
+
+/* .card :hover{
+    box-shadow: 13px 5px 10px 0 rgba(0,0,0,0.08);
+  transition: box-shadow 0.3s ease-in-out;
+} */
+.card{
+    border: 2px solid blue;
+}
+
+.card img{
+    aspect-ratio: 1;
+    object-fit: cover;
+    /* object-position: center; */
+    width: 200px;
+    /* text-align: center; */
+}
+/*  */
+#testimonials img{
+    aspect-ratio: 1;
+    object-position: center;
+    object-fit: cover ;
+}
+
+/*  */
+
+.contact>i{
+    background-color: rgba(52, 10, 107, 0.8);
+    padding: 5px 10px 5px 10px;
+    font-size: 3em;
+border-radius: 50%;
+}
+.contact>i:hover{
+    background-color:rgba(128, 14, 14, 0.8);
+    border: 5px solid white;
+    border-collapse: separate;
+}
+@media screen and (max-width:425px) {
+    .label-to-right{
+        margin-right: 50%;
+    
+    }
+    #name{
+        width: 300px;
+    }
+    #surname {
+        width: 300px;
+    }
+    #email{
+        width: 300px;
+    }
+    #subject {
+        width: 300px;
+    }
+
+    #message {
+        width: 90%;
+    }
+   
+
+}
+
+
+#footer a{
+    color: aliceblue;
+}
+
+#footer a :hover{
+    color: rgba(128, 14, 14, 0.8)
+}
