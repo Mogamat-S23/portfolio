@@ -5,7 +5,7 @@
     justify-content: space-between;
 } */
 
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;700&family=Square+Peg&display=swap');
 
 html,body{
     margin: 0;
@@ -18,7 +18,12 @@ html,body{
     margin: 50vh;
 }
 
-
+.landing-font{
+    font-family: 'Montserrat', sans-serif;
+    
+    font-size: 90px;
+    font-weight: bold;
+}
 /* navbar */
 
  #about{
@@ -155,7 +160,15 @@ h4{
     border: 2px solid rgb(221, 58, 58);
     cursor: pointer;
 }
+#social {
+    margin: 12px 53px;
+    margin-top: 20%;
+}
 
+#social2{
+    margin: 12px 53px;
+    margin-top: 6%;
+}
 
 
 .projects-container{ 
