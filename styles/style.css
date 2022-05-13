@@ -15,13 +15,24 @@ html,body{
 
 /* landing */
 #caro{
-    margin: 50vh;
+    margin: 20%;
 }
+ @media( max-width : 769px) {
+    .carousel-caption h1
+    { 
+        font-size:30px;
+    }
+    .carousel-caption h4 {
+        font-size:20px ;
+    }
+ }
 
+
+ 
 .landing-font{
     font-family: 'Montserrat', sans-serif;
     
-    font-size: 90px;
+    font-size: 80px;
     font-weight: bold;
 }
 /* navbar */
@@ -60,7 +71,7 @@ html,body{
 
 
 
-.box{
+.box1{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,3 +409,7 @@ border-radius: 50%;
 #footer a :hover{
     color: rgba(128, 14, 14, 0.8)
 }
+
+
+
+    
