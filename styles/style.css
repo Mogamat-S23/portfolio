@@ -44,9 +44,13 @@ html,body{
 
 #services{
     scroll-margin: 62px;
+    margin-top: 10%;
+    
+    
 }
 #testimonials{
     scroll-margin: 62px;
+    
 }
 #contact{
     scroll-margin: 1px;
@@ -55,6 +59,7 @@ html,body{
 #resume{
     scroll-margin: 47px;
     /* height: 800px; */
+    /* margin-bottom: 5%; */
 }
 
 /* about  */
@@ -288,6 +293,8 @@ h4{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+    
+    
 }
 
 .bgColor{
